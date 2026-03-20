@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-sans: 'DM Sans', sans-serif;
+  --color-bk: #0a0a0a;
+  --color-rose: #b5004a;
+  --color-rose2: #fdf2f7;
+  --color-gold: #c9a84c;
+  --color-grn: #16a34a;
+  --color-red: #dc2626;
+  --color-g50: #f9f9f9;
+  --color-g100: #f0f0f0;
+  --color-g200: #e0e0e0;
+  --color-g400: #9ca3af;
+  --color-g500: #6b7280;
+  --color-g600: #4b5563;
+  --color-g800: #1f2937;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-bk);
+  background: #fff;
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes slideIn { from { opacity: 0; transform: translateX(16px); } to { opacity: 1; transform: none; } }
+@keyframes scaleUp { from { opacity: 0; transform: scale(.96); } to { opacity: 1; transform: none; } }
+
+.animate-fadeIn { animation: fadeIn .3s ease; }
+.animate-slideIn { animation: slideIn .25s ease; }
+.animate-scaleUp { animation: scaleUp .18s ease; }
